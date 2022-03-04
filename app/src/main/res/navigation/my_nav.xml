@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/my_nav"
+    app:startDestination="@id/mainFragment">
+
+    <fragment
+        android:id="@+id/mainFragment"
+        android:name="com.example.finalproject.MainFragment"
+        android:label="fragment_main"
+        tools:layout="@layout/fragment_main" >
+        <action
+            android:id="@+id/action_mainFragment_to_registerClientFragment"
+            app:destination="@id/registerClientFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_registerBusinessFragment"
+            app:destination="@id/registerBusinessFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_searchScreenFragment"
+            app:destination="@id/searchScreenFragment" />
+        <action
+            android:id="@+id/action_mainFragment_to_businessMgmt"
+            app:destination="@id/businessMgmt" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerClientFragment"
+        android:name="com.example.finalproject.RegisterClientFragment"
+        android:label="fragment_client_register"
+        tools:layout="@layout/fragment_client_register" >
+        <action
+            android:id="@+id/action_registerClientFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/registerBusinessFragment"
+        android:name="com.example.finalproject.RegisterBusinessFragment"
+        android:label="fragment_business_register"
+        tools:layout="@layout/fragment_business_register" >
+        <action
+            android:id="@+id/action_registerBusinessFragment_to_mainFragment"
+            app:destination="@id/mainFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/searchScreenFragment"
+        android:name="com.example.finalproject.SearchScreenFragment"
+        android:label="fragment_search_screen"
+        tools:layout="@layout/fragment_search_screen" >
+        <action
+            android:id="@+id/action_searchScreenFragment_to_calendarFragment"
+            app:destination="@id/calendarFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/calendarFragment"
+        android:name="com.example.finalproject.CalendarFragment"
+        android:label="fragment_calendar"
+        tools:layout="@layout/fragment_calendar" >
+        <action
+            android:id="@+id/action_calendarFragment_to_searchScreenFragment"
+            app:destination="@id/searchScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessWorkDaysHrsMgmt"
+        android:name="com.example.finalproject.BusinessWorkDaysHrsMgmt"
+        android:label="fragment_business_work_days_hrs_mgmt"
+        tools:layout="@layout/fragment_business_work_days_hrs_mgmt" >
+        <action
+            android:id="@+id/action_businessWorkDaysHrsMgmt_to_businessMgmt"
+            app:destination="@id/businessMgmt" />
+    </fragment>
+    <fragment
+        android:id="@+id/businessMgmt"
+        android:name="com.example.finalproject.BusinessMgmt"
+        android:label="fragment_business_mgmt"
+        tools:layout="@layout/fragment_business_mgmt" >
+        <action
+            android:id="@+id/action_businessMgmt_to_businessWorkDaysHrsMgmt"
+            app:destination="@id/businessWorkDaysHrsMgmt" />
+    </fragment>
+</navigation>

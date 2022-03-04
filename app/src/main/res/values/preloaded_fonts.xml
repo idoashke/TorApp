@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/andika_new_basic_bold</item>
+        <item>@font/cantarell_bold</item>
+        <item>@font/exo_2</item>
+        <item>@font/racing_sans_one</item>
+        <item>@font/sansita</item>
+    </array>
+</resources>

@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--    xmlns:tools="http://schemas.android.com/tools"-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="match_parent"-->
+<!--    xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--    android:orientation="vertical"-->
+<!--    tools:context=".BusinessMgmt">-->
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".RegisterBusinessFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/textView"
+            style="@style/TextAppearance.MaterialComponents.Overline"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center"
+            android:text="Business Management"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/mgmt_working_hours"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                app:cornerRadius="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="32dp"
+                android:text="Manage Working Hours"
+                android:textAllCaps="false"
+                android:textSize="18sp"></Button>
+
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/meetings_layout"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_margin="10dp"-->
+<!--        android:orientation="vertical">-->
+
+
+<!--        <com.google.android.material.textfield.TextInputLayout-->
+<!--            android:id="@+id/meetings_text"-->
+<!--            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:hint="Select Date"-->
+<!--            app:startIconDrawable="@drawable/ic_event">-->
+
+<!--            <AutoCompleteTextView-->
+<!--                android:id="@+id/meetings_dropdown"-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="match_parent"-->
+<!--                android:layout_marginTop="30dp"-->
+<!--                android:inputType="none" />-->
+
+<!--        </com.google.android.material.textfield.TextInputLayout>-->
+
+<!--    </LinearLayout>-->
+
+<!--        </LinearLayout>-->
+
+<!--        <Button-->
+<!--            android:id="@+id/pick_button"-->
+<!--            style="@style/Widget.MaterialComponents.Button.Icon"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_gravity="center"-->
+<!--            android:text="Show Meetings"-->
+<!--            android:textAllCaps="false"-->
+<!--            android:textSize="18sp"-->
+<!--            app:cornerRadius="20dp"></Button>-->
+<!--    </LinearLayout>-->
+
+    <LinearLayout
+        android:id="@+id/date_picker_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/pick_date_button"
+            style="@style/Widget.MaterialComponents.Button.Icon"
+            app:cornerRadius="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Pick a Date To Show Meetings"
+            android:textAllCaps="false"
+            android:layout_margin="25dp"
+            android:textSize="18sp"></Button>
+
+        <TextView
+            android:id="@+id/show_selected_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:fontFamily="@font/archivo_narrow"
+            android:text="Selected Date is : "
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+            <Button
+                android:id="@+id/show_button"
+                style="@style/Widget.MaterialComponents.Button.Icon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Show Meetings"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:visibility="invisible"
+                app:cornerRadius="20dp"></Button>
+
+
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp">
+
+            <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+
+                <!--                    &lt;!&ndash; Title, secondary and supporting text &ndash;&gt;-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:text="@string/title"-->
+                <!--                        android:textAppearance="?attr/textAppearanceHeadline6"-->
+                <!--                        />-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="8dp"-->
+                <!--                        android:text="@string/secondary_text"-->
+                <!--                        android:textAppearance="?attr/textAppearanceBody2"-->
+                <!--                        android:textColor="?android:attr/textColorSecondary"-->
+                <!--                        />-->
+                <!--                    <TextView-->
+                <!--                        android:layout_width="wrap_content"-->
+                <!--                        android:layout_height="wrap_content"-->
+                <!--                        android:layout_marginTop="16dp"-->
+                <!--                        android:text="@string/supporting_text"-->
+                <!--                        android:textAppearance="?attr/textAppearanceBody2"-->
+                <!--                        android:textColor="?android:attr/textColorSecondary"-->
+                <!--                        />-->
+
+
+            </LinearLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+
+
+    </LinearLayout>
+</ScrollView>

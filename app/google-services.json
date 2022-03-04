@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "466506202042",
+    "firebase_url": "https://torapp-e68d1-default-rtdb.firebaseio.com",
+    "project_id": "torapp-e68d1",
+    "storage_bucket": "torapp-e68d1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:466506202042:android:75b154f70b03f055ba7b83",
+        "android_client_info": {
+          "package_name": "com.example.finalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "466506202042-av0o9db5ipo431bk5ij6jdgl4aiefdeh.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOGxeWgfahAgLi1jvZblSqje6O7lhaE2w"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "466506202042-av0o9db5ipo431bk5ij6jdgl4aiefdeh.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
